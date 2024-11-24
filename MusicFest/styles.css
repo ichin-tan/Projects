@@ -1,0 +1,372 @@
+
+body {
+    margin: 0px;  
+    background-color: #292863;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #292863;
+}
+
+#header-p {
+    margin: 0px;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(218, 106, 205);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: "Sofadi One", system-ui;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px;
+    padding: 30px 0px 50px 0px;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(176, 176, 188);
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(138, 148, 213);;
+}
+
+footer {
+    text-align: center;
+    background-color: #292863;
+    color: rgb(176, 176, 188);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#copyright-p {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+}
+
+/* For home page */
+
+.about-main {
+    background-color: rgb(138, 148, 213);
+    text-align: center;
+    color: rgb(1, 1, 23);;
+    padding: 40px;
+    padding-bottom: 500px;
+    /* font-weight: bold; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url('music_back_1.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 400px;
+}
+
+.about {
+    width: 1500px;
+}
+
+#head-line-p {
+    font-size: 50px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+#fest-date-p {
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#fest-venue-p {
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.fest-info-p {
+    font-size: 25px;
+    margin-top: 30px;
+    color: #061c4d;
+}
+
+/* Ticket Selection */
+
+.ticket-selection {
+    background-color: rgb(138, 148, 213);
+}
+
+.ticket-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.ticket-box {
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 5px solid #292863;
+    border-radius: 30px; 
+    background-color: rgb(181, 189, 238);
+    color: #292863;
+}
+
+.pass-icon {
+    font-size: 70px;
+}
+
+.pass-feature {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.pass-name {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.pass-price {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.btn-buy-pass {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    border: 3px solid #292863;
+    border-radius: 10px;
+    color: #292863;
+    background-color: rgb(217, 229, 247);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-buy-pass:hover {
+    background-color: #292863;
+    color: rgb(217, 229, 247);
+}
+
+/* Artist */
+
+#artist-header {
+    font-size: 50px;
+    margin: 0px;
+    color: #010123;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(138, 148, 213);
+}
+
+.artist-main {
+    background-color: rgb(138, 148, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.artist-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.artist-image {
+    height: 300px;
+    width: 500px;
+    border: 5px solid #292863;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.artist-info {
+    font-size: 20px;
+    color: #292863;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.artist-info p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    font-size: 40px;
+    color: #79085f;
+}
+
+/* For payment page */
+
+.payment-form {
+    padding-top: 50px;
+    background-color: rgb(138, 148, 213);
+    padding-bottom: 40px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 550px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 3px solid #292863;
+    background-color: rgb(217, 229, 247);
+    color: #292863;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #292863;
+}
+
+select {
+    height: 50px;
+    width: 550px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 3px solid #292863;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #292863;
+    font-weight: bold;
+    background-color: rgb(217, 229, 247);
+}
+
+.btn-purchase {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #292863;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(217, 229, 247);
+    color: #292863;
+}
+
+.btn-purchase:hover {
+    background-color: #292863;
+    color: rgb(217, 229, 247);
+}
+
+#validation-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(170, 18, 18);
+    margin: 0px;
+}
+
+.order-summary {
+    background-color: rgb(138, 148, 213);
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: #292863;
+    /* display: none; */
+}
+
+#order-summary-title-p {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-confirm-order {
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #292863;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(217, 229, 247);
+    margin: 0px;
+    width: 300px;
+    color: #292863;
+}
+
+.btn-confirm-order:hover {
+    background-color: #292863;
+    color: rgb(217, 229, 247);
+}
+
+.btn-edit-order {
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #292863;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(217, 229, 247);
+    margin: 0px;
+    width: 300px;
+    color: #292863;
+}
+
+.btn-edit-order:hover {
+    background-color: #292863;
+    color: rgb(217, 229, 247);
+}
+

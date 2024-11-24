@@ -1,0 +1,131 @@
+
+.main-calc-container {
+    /* margin-left: 600px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-input {
+    padding-top: 5px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+button {
+    height: 45px;
+    font-size: 18px;
+}
+
+.peak-usage-main {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.peak-usage-box {
+    width: 190px;
+    height: 140px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.box-1 {
+    background-color: rgb(131, 235, 198);
+}
+
+.box-2 {
+    background-color: rgb(241, 171, 220);
+}
+
+.total-charges {
+    text-align: center;
+    background-color: rgb(48, 53, 65);
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#peak-usage-box-1-title {
+    font-size: 18px; 
+    margin: 0px;
+}
+
+#peak-usage-box-1-price {
+    font-size: 50px; 
+    margin: 0px;
+}
+
+#peak-usage-box-1-des {
+    font-size: 15px; 
+    margin: 0px;
+}
+
+#peak-usage-box-2-title {
+    font-size: 18px; 
+    margin: 0px;
+}
+
+#peak-usage-box-2-price {
+    font-size: 50px; 
+    margin: 0px;
+}
+
+#peak-usage-box-2-des {
+    font-size: 15px; 
+    margin: 0px;
+}
+
+.price-labels {
+    font-size: 20px;
+}
+
+#total-consumption-charge-label {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+#sales-tax-label {
+    margin-top: 5px; 
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+#provincial-rebate-label {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+#total-pay-label {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+#total-price-label {
+    font-size: 55px;
+    margin: 0px;
+}
+
+/* .bill-receipt {
+    display: none;
+} */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <div class="main-calc-container">
+        <div class="content">
+            <div>
+                <h1>Electricity Bill Calculator</h1>
+            </div>
+
+            <div class="user-input">
+
+                <label for="">Enter kwh used during on-peak hours</label>
+                <input id="input-on-peak-hours" type="text" placeholder="Enter on-peak hours">  
+    
+                <label for="">Enter kwh used during off-peak hours</label>
+                <input id="input-off-peak-hours" type="text" placeholder="Enter off-peak hours">      
+    
+                <label for="">Province of residence</label>
+                <input id="input-province" type="text" placeholder="Enter province (British Columbia, Ontario)">      
+    
+                <button>Calculate</button>
+            </div>
+
+            <div class="bill-receipt">
+                
+                <div class="peak-usage-main">
+                    <div class="peak-usage-box box-1">
+                        <div>
+                            <p id="peak-usage-box-1-title">ON PEAK USAGE</p>
+                            <p id="peak-usage-box-1-price"></p>
+                            <p id="peak-usage-box-1-des"></p>    
+                        </div>
+                    </div>
+
+                    <div class="peak-usage-box box-2">
+                        <div>
+                            <p id="peak-usage-box-2-title">OFF PEAK USAGE</p>
+                            <p id="peak-usage-box-2-price"></p>
+                            <p id="peak-usage-box-2-des"></p>    
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p id="total-consumption-charge-label"></p>
+                    <p id="sales-tax-label"></p>
+                    <p id="provincial-rebate-label"></p>    
+                </div>
+
+                <div class="total-charges">
+                    <div>
+                        <p id="total-pay-label">TOTAL TO PAY</p>
+                        <p id="total-price-label"></p>    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #EDF1D6;
+}
+
+#title {
+  background-color: #2B3467;
+}
+
+.guitarlogoimage {
+  height: 50px;
+  width: 50px;
+}
+
+
+.n-item {
+  color: #EDF1D6;
+  font-size: 1.2rem;
+}
+
+li {
+  padding: 0 15px;
+}
+
+.logoname {
+  color: #EDF1D6;
+  font-size: 1.5rem;
+}
+
+/* upper part */
+
+.container-fluid {
+  padding: 3% 15% 5%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #EDF1D6;
+  line-height: 1.5;
+  padding: 4rem 0;
+}
+
+.custombutton {
+  margin: 0 20px;
+}
+
+.main-image {
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+}
+
+@media (max-width: 990px) {
+  .main-image {
+    position: static;
+    width: 50%;
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+/* features section */
+
+#features {
+  padding: 5% 15%;
+}
+
+.feature-box {
+  text-align: center;
+  color: #2B3467;
+  padding: 5%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.feature-icon {
+  color: #060047;
+}
+
+.feature-icon:hover {
+  color: #537FE7;
+}
+
+
+/* testimonial */
+
+#testimonials {
+  padding: 7% 0;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #2B3467;
+  color: #EDF1D6;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  margin-bottom: 20px;
+}
+
+#press {
+  text-align: center;
+  background-color: #2B3467;
+  padding-bottom: 50px;
+}
+
+.press-logo {
+  width: 20%;
+  margin: 0 30px;
+}
+
+/* pricing */
+
+#pricing {
+  text-align: center;
+  color: #2B3467;
+}
+
+.btn-price {
+  background-color: #2B3467;
+  margin: 10px 0;
+}
+
+.card {
+  margin: 20px 0;
+}
+
+/* cta */
+
+#cta {
+  background-color: #2B3467;
+  text-align: center;
+  padding: 10% 15%;
+  /* color: #2B3467; */
+  color: #EDF1D6;
+}
+
+.ctah3 {
+  font-size: 3rem;
+}
+
+.download-btn-cta {
+  margin: 20px 20px 0;
+  background-color: #EDF1D6;
+  color: #2B3467;
+}
+
+/* footer */
+
+#footer {
+  background-color: #EDF1D6;
+  text-align: center;
+  padding: 5% 15%;
+  color: #2B3467;
+  font-size: 1rem;
+}
+
+.footer-icon {
+  color: #060047;
+  margin: 0 10px 15px;
+}
+
+.footer-icon:hover {
+  color: #537FE7;
+}

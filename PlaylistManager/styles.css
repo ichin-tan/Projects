@@ -1,0 +1,96 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.song-list-box {
+    border: 1px solid black;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.playlist-box {
+    border: 1px solid black;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.add-song-box {
+    border: 1px solid black;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.song-list-inner-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.song-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn-add-to-playlist {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(10, 10, 129);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-add-to-playlist:hover {
+    border: 2px solid rgb(10, 10, 129);
+    background-color: rgb(126, 126, 244);
+}
+
+.btn-remove-from-playlist {
+    width: 170px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(138, 19, 10);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-remove-from-playlist:hover {
+    border: 2px solid rgb(138, 19, 10);
+    background-color: rgb(243, 124, 115);
+}
+
+.btn-add-song {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(27, 97, 6);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-add-song:hover {
+    border: 2px solid rgb(27, 97, 6);
+    background-color: rgb(85, 180, 56);
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+}

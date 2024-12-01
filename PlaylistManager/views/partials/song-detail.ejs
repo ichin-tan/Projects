@@ -1,0 +1,21 @@
+<div class="song-div">
+    <div class="song-list-inner-song-image-div">
+        <img src="<%= song.image %>" alt="">
+    </div>
+    <div class="song-list-inner-artist-div">
+        <p>Title: <%= song.title %></p>
+        <p>Artist: <%= song.artist %></p>
+    </div>
+    <div class="song-list-inner-add-div">
+
+        <% if(songLocation === "All Song") { %>
+            <form action="/addToPlaylist/<%= song._id %>" method="POST">
+                <button class="btn-add-to-playlist" type="submit">Add To Playlist</button>
+            </form>
+        <% } else { %>
+            <form action="/removeFromPlaylist/<%= song._id %>" method="POST">
+                <button class="btn-remove-from-playlist" type="submit">Remove From Playlist</button>
+            </form>
+        <% } %>
+    </div>    
+</div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="main-box">
+
+        <!-- first box -->
+        <div class="song-list-box">
+            <div>
+                <h1 class="title">All Songs</h1>
+            </div>
+            <div class="song-list-inner-box">
+
+                <% for (song of arrSongs) { %>
+                    <%- include("./partials/song-detail.ejs", {songLocation: "All Song", song:song}) %>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Second box -->
+        <div class="playlist-box">
+            <div>
+                <h1 class="title">My Playlist</h1>
+            </div>
+            <div class="song-list-inner-box">
+                <% if (arrPlaylistSongs.length === 0) { %>
+                    <p>Playlist is Empty! Add a Song to the playlist.</p>
+                <% } else { %>
+                    <% for (song of arrPlaylistSongs) { %>
+                        <%- include("./partials/song-detail.ejs", {songLocation: "Playlist Song", song:song}) %>
+                    <% } %>    
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Third box -->
+        <div class="add-song-box">
+            <h1>Add Song to Website</h1>
+            <form action="/addSong" method="POST">
+                <label for="">Song Name</label>
+                <br>
+                <input type="text" placeholder="Enter song name" name="title">
+                <br><br>
+                <label for="">Song Artist</label>
+                <br>
+                <input type="text" placeholder="Enter song artist" name="artist">
+                <br><br>
+                <label for="">Song Image</label>
+                <br>
+                <input type="text" placeholder="Enter url of song" name="image">
+                <br><br>
+                <button class="btn-add-song" type="submit">Add Song</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+
+    <p class="place-order-p">Place Order</p>
+    <form action="/restaurant/placeOrder" method="POST">
+        
+        <div class="main-place-order-div">
+            <div class="place-order-field-div">
+                <select name="menuItemId">
+                    <option value="">--Select an Item--</option>
+                    <% for (item of arrMenuItems) { %>
+                        <option value="<%= item._id %>"><%= item.name %> - <%= item.price %>$</option>
+                    <% } %>
+                </select>    
+            </div>
+
+            <div class="place-order-field-div">
+                <label for="">Customer Name</label>
+                <input type="text" placeholder="Enter name" name="customerName">
+            </div>
+
+            <div class="place-order-field-div">
+                <label for="">Contact No:</label>
+                <input type="text" placeholder="Enter your contact number" maxlength="10" name="contactNo">     
+            </div>
+
+            <div class="place-order-field-div">
+                <label for="">Address:</label>
+                <input type="text" placeholder="Enter your address" name="deliveryAddress">    
+            </div>
+
+            <div class="place-order-field-div">
+                <label for="">Order Date:</label>
+                <input type="date" placeholder="Enter order date" name="orderDate">    
+            </div>
+
+            <button type="submit">PLACE ORDER</button>
+
+        </div>
+
+    </form>
+
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR!</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+
+    <p class="error-p">ERROR!!!!</p>
+
+    <p class="error-message-p"><%= errorMessage %></p>
+
+    <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmation</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <%- include("./partials/header.ejs") %>
+
+        <p class="order-summary-p">Order Summary</p>
+        <p class="order-summary">Your order is completed. Your order id is - <span><%= order._id %></span>. Use this to track the status of your order.</p>
+        <p class="order-summary">Name: <span><%= order.customerName %></span></p>
+        <p class="order-summary">Address: <span><%= order.deliveryAddress %></span></p>
+        <p class="order-summary">Price: <span>$<%= menuItemPrice %></span></p>
+        <p class="order-summary">Tax(13%): <span>$<%= (menuItemPrice * 0.13).toFixed(2) %></span></p>
+        <p class="order-summary">Total Price: <span>$<%= (menuItemPrice * 1.13).toFixed(2) %></span></p>
+        <p class="order-summary">Order Status: <span><%= order.status %></span></p>
+
+        <%- include("./partials/footer.ejs") %>
+    </body>
+</html>

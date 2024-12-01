@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Order Status</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <p class="enter-id-p" for="">Enter Order ID</p>
+    <form action="/restaurant/orderStatus" method="POST">
+        <input class="order-id-field" name="orderId" type="text" placeholder="Enter Order ID">
+        <button class="check-status-btn" type="submit">Check Status</button>
+    </form>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

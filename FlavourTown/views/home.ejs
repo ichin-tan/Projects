@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Town</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("./partials/header.ejs") %>
+
+    <div class="about-div">
+        <p class="about-p">At Flavor Town, we celebrate culinary diversity, bringing a mix of flavors from around the world to your table.</p>
+        <p class="location-p"><span>Location: </span>456 Taste Ave, Toronto, ON</p>
+        <p class="time-p"><span>Open Hours: </span>10 AM - 11 PM</p>
+    </div>
+
+    <p class="menu-p">Menu Items</p>    
+
+    <div class="menu-item-outer-div">
+        <% for(menuItem of arrMenuItems) { %>
+            <%- include("./partials/menu-item.ejs", {menuItem : menuItem}) %>
+        <% } %>    
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+    background-color: rgb(252, 229, 208);
+    text-align: center;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(249, 199, 162);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+}
+
+#head-title {
+    color: #310e04;
+    font-style: italic;
+    padding: 15px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px;
+}
+
+.nav-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin: 0px;
+    padding: 10px 0px;
+    padding-top: 0px;
+    font-weight: bold;
+}
+
+.nav-link-a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #b84416;
+}
+
+.nav-link-a:hover {
+    color: #f35925;
+}
+
+.about-div {
+    background-color: aliceblue;
+}
+
+.about-p {
+    margin-top: 0px;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #b84416;
+}
+
+.location-p {
+    font-size: 20px;
+    color: #b84416;
+}
+
+.time-p {
+    font-size: 20px;
+    color: #b84416;
+    padding-bottom: 20px;
+}
+
+span {
+    font-weight: bold;
+    color: #310e04;
+}
+
+.menu-p {
+    font-size: 30px;
+    color: #5d1805;
+    font-weight: bold;
+}
+
+.menu-item-outer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menuItem {
+    width: 350px;
+    margin: 5px;
+    border: 3px solid #561806;
+    padding-bottom: 25px;
+    border-radius: 30px;
+    background-color: rgb(248, 236, 224);
+}
+
+.menu-item-img {
+    height: 250px;
+    width: 350px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.menu-item-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-item-description {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menu-item-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.place-order-a {
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    color: #b84416;
+}
+
+.place-order-a:hover {
+    color: #f35925;
+}
+
+.main-place-order-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.place-order-field-div {
+    display: flex;
+    flex-direction: row;
+    width: 550px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.place-order-p{
+    font-size: 30px;
+    color: #5d1805;
+    font-weight: bold;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 3px solid #561806;
+    background-color: rgb(251, 239, 234);
+    color: #561806;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #561806;
+}
+
+select {
+    height: 50px;
+    width: 550px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 3px solid #561806;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #561806;
+    font-weight: bold;
+    background-color: rgb(251, 239, 234);
+}
+
+button {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid #561806;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(251, 239, 234);
+    color: #561806;
+}
+
+button:hover {
+    background-color: rgb(244, 186, 223);
+}
+
+.order-summary-p {
+    font-size: 30px;
+    color: #5d1805;
+    font-weight: bold;
+}
+
+.order-summary {
+    font-size: 20px;
+    color: #b84416;
+    font-weight: bold;
+}
+
+.order-status-p {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.enter-id-p {
+    font-size: 30px;
+    color: #5d1805;
+    font-weight: bold;
+}
+
+.order-id-field {
+    width: 500px;
+}
+
+.check-status-btn {
+    width: 200px;
+}
+
+.error-p {
+    font-size: 30px;
+    color: #5d1805;
+    font-weight: bold;
+}
+
+.error-message-p {
+    font-size: 20px;
+    color: #b84416;
+    margin-bottom: 0px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(249, 199, 162);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+}

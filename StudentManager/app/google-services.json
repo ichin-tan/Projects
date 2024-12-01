@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "146437140649",
+    "project_id": "novandroid-11c10",
+    "storage_bucket": "novandroid-11c10.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146437140649:android:1f626d917e26eab3e079b8",
+        "android_client_info": {
+          "package_name": "com.example.firestorewithrv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnW5RHFUdSuyVHuRtm08ku9NPUbj2Yky8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

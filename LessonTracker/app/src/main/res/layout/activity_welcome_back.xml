@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeBackActivity"
+    android:background="#9DD6EB">
+
+    <TextView
+        android:id="@+id/tvWelcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome back, Chintan"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tvCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You've completed 10% of the course!"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvLessonCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lessons completed: 1"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvLessonRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lessons remaining: 4"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CONTINUE"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:backgroundTint="#051657"
+        />
+
+    <Button
+        android:id="@+id/btnDeleteAllDataReset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Delete all data and reset"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:backgroundTint="#051657"
+        />
+
+</LinearLayout>

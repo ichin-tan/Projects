@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonDetailsActivity"
+    android:orientation="vertical"
+    android:background="#9DD6EB">
+
+    <TextView
+        android:id="@+id/tvLessonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Variables"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvLessonLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="20 min"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvLessonDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnWatchLesson"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="WATCH LESSON"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:backgroundTint="#051657"
+        />
+
+    <Button
+        android:id="@+id/btnMarkComplete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="MARK COMPLETE"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:backgroundTint="#051657"
+        />
+
+</LinearLayout>

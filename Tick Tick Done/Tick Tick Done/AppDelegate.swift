@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Tick Tick Done
 //
-//  Created by Chintan Panchal on 19/12/24.
+//  Created by CP on 19/12/24.
 //
 
 import UIKit

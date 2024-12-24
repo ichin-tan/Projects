@@ -47,6 +47,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func setStartingScreen() {
+        if(isUserLoggedIn) {
+            self.setTabbar()
+        } else {
+            self.setLoginScreen()
+        }
+    }
 
+    func setTabbar() {
+        self.window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        let tabBarController = TabBarVC()
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+    }
+    
+    func setLoginScreen() {
+        self.window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        let loginVC = STORYBOARD.instantiateViewController(identifier: "LoginVC") as! LoginVC
+        window?.rootViewController = loginVC
+        window?.makeKeyAndVisible()
+    }
 }
 

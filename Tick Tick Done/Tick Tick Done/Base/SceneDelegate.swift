@@ -64,8 +64,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func setLoginScreen() {
         self.window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        let navVC = STORYBOARD.instantiateViewController(identifier: "NavVC") as! UINavigationController
         let loginVC = STORYBOARD.instantiateViewController(identifier: "LoginVC") as! LoginVC
-        window?.rootViewController = loginVC
+        navVC.setViewControllers([loginVC], animated: true)
+        window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }
 }

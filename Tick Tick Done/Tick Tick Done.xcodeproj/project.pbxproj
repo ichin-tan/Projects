@@ -15,6 +15,7 @@
 		721AA1092D1D149F00D26778 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AA1082D1D149F00D26778 /* HistoryVC.swift */; };
 		721AA10B2D1D153C00D26778 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AA10A2D1D153C00D26778 /* ProfileVC.swift */; };
 		721AA10D2D1D155500D26778 /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721AA10C2D1D155500D26778 /* AddTaskVC.swift */; };
+		724E90E02D233B00007A16D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 724E90DF2D233B00007A16D6 /* GoogleService-Info.plist */; };
 		729E1BD12D14B17F00896ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E1BD02D14B17F00896ECA /* AppDelegate.swift */; };
 		729E1BD32D14B17F00896ECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729E1BD22D14B17F00896ECA /* SceneDelegate.swift */; };
 		729E1BD82D14B17F00896ECA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 729E1BD72D14B17F00896ECA /* Base */; };
@@ -25,9 +26,11 @@
 		72CC1E482D14EC6F00DDB540 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E472D14EC6F00DDB540 /* Utility.swift */; };
 		72CC1E4B2D14ED6C00DDB540 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E4A2D14ED6C00DDB540 /* Extensions.swift */; };
 		72CC1E4D2D14F60D00DDB540 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E4C2D14F60D00DDB540 /* CircularProgressView.swift */; };
+		EB7A2B6C906DE6D340E8F6CC /* Pods_Tick_Tick_Done.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB14CEF9011B4F3E66ECCF /* Pods_Tick_Tick_Done.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AAB14CEF9011B4F3E66ECCF /* Pods_Tick_Tick_Done.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tick_Tick_Done.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		721AA0FE2D1B0A7900D26778 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		721AA1002D1B0AC700D26778 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		721AA1022D1B0AD800D26778 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		721AA1082D1D149F00D26778 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		721AA10A2D1D153C00D26778 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		721AA10C2D1D155500D26778 /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		724E90DF2D233B00007A16D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		729E1BCD2D14B17F00896ECA /* Tick Tick Done.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tick Tick Done.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		729E1BD02D14B17F00896ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		729E1BD22D14B17F00896ECA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		72CC1E472D14EC6F00DDB540 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		72CC1E4A2D14ED6C00DDB540 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		72CC1E4C2D14F60D00DDB540 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		72DA6C88D30B371ABC608895 /* Pods-Tick Tick Done.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick Tick Done.debug.xcconfig"; path = "Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done.debug.xcconfig"; sourceTree = "<group>"; };
+		99D0F557BB80817D797D25BB /* Pods-Tick Tick Done.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick Tick Done.release.xcconfig"; path = "Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7A2B6C906DE6D340E8F6CC /* Pods_Tick_Tick_Done.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65CD2EB35E63F5E4D384746A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AAB14CEF9011B4F3E66ECCF /* Pods_Tick_Tick_Done.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6612119FBD48BC0513FD6F1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72DA6C88D30B371ABC608895 /* Pods-Tick Tick Done.debug.xcconfig */,
+				99D0F557BB80817D797D25BB /* Pods-Tick Tick Done.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		729E1BC42D14B17F00896ECA = {
 			isa = PBXGroup;
 			children = (
 				729E1BCF2D14B17F00896ECA /* Tick Tick Done */,
 				729E1BCE2D14B17F00896ECA /* Products */,
+				6612119FBD48BC0513FD6F1D /* Pods */,
+				65CD2EB35E63F5E4D384746A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +114,7 @@
 				72CC1E3E2D14EA1800DDB540 /* View */,
 				72CC1E3D2D14EA1000DDB540 /* Model */,
 				729E1BDE2D14B18100896ECA /* Info.plist */,
+				724E90DF2D233B00007A16D6 /* GoogleService-Info.plist */,
 			);
 			path = "Tick Tick Done";
 			sourceTree = "<group>";
@@ -166,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 729E1BE12D14B18100896ECA /* Build configuration list for PBXNativeTarget "Tick Tick Done" */;
 			buildPhases = (
+				57198044187A1244F4AF5AB9 /* [CP] Check Pods Manifest.lock */,
 				729E1BC92D14B17F00896ECA /* Sources */,
 				729E1BCA2D14B17F00896ECA /* Frameworks */,
 				729E1BCB2D14B17F00896ECA /* Resources */,
+				3DE73EEB2E7BAF4FACB5CF0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,12 +247,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				729E1BDA2D14B18100896ECA /* Assets.xcassets in Resources */,
+				724E90E02D233B00007A16D6 /* GoogleService-Info.plist in Resources */,
 				729E1BDD2D14B18100896ECA /* Base in Resources */,
 				729E1BD82D14B17F00896ECA /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DE73EEB2E7BAF4FACB5CF0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57198044187A1244F4AF5AB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tick Tick Done-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		729E1BC92D14B17F00896ECA /* Sources */ = {
@@ -391,12 +463,14 @@
 		};
 		729E1BE22D14B18100896ECA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72DA6C88D30B371ABC608895 /* Pods-Tick Tick Done.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7RZ34DWG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tick Tick Done/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -420,12 +494,14 @@
 		};
 		729E1BE32D14B18100896ECA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D0F557BB80817D797D25BB /* Pods-Tick Tick Done.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K7RZ34DWG5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tick Tick Done/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

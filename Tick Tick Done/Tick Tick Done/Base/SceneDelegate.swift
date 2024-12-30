@@ -49,12 +49,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func setStartingScreen() {
-        self.setTabbar()
-//        if(isUserLoggedIn) {
-//            self.setTabbar()
-//        } else {
-//            self.setLoginScreen()
-//        }
+        if(isUserLoggedIn) {
+            self.setTabbar()
+        } else {
+            self.setLoginScreen()
+        }
     }
 
     func setTabbar() {

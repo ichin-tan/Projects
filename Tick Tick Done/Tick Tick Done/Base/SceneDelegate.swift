@@ -17,6 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        self.setStartingScreen()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -48,25 +49,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func setStartingScreen() {
-        if(isUserLoggedIn) {
-            self.setTabbar()
-        } else {
-            self.setLoginScreen()
-        }
+        self.setTabbar()
+//        if(isUserLoggedIn) {
+//            self.setTabbar()
+//        } else {
+//            self.setLoginScreen()
+//        }
     }
 
     func setTabbar() {
-        self.window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
-        let tabBarController = TabBarVC()
-        window?.rootViewController = tabBarController
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
+        
+        let tabBarController = TabBarVC() // Make sure TabBarVC is configured properly
+        self.window = UIWindow(windowScene: windowScene)
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
         window?.makeKeyAndVisible()
     }
     
     func setLoginScreen() {
-        self.window = UIApplication.shared.windows.first(where: { $0.isKeyWindow })
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return }
         let navVC = STORYBOARD.instantiateViewController(identifier: "NavVC") as! UINavigationController
         let loginVC = STORYBOARD.instantiateViewController(identifier: "LoginVC") as! LoginVC
         navVC.setViewControllers([loginVC], animated: true)
+        self.window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
     }

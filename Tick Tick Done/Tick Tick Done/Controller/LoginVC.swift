@@ -15,14 +15,14 @@ class LoginVC: UIViewController {
     @IBOutlet weak var txtLoginEmail: UITextField!
     @IBOutlet weak var txtLoginPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
-    @IBOutlet weak var txtSignupEmail: UITextField!
-    @IBOutlet weak var txtSignupPassword: UITextField!
-    @IBOutlet weak var btnSignup: UIButton!
+    @IBOutlet weak var btnEye: UIButton!
     
     //MARK: - Lifecycle methods -
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.applyStyle()
+        self.setUp()
     }
     
     //MARK: - Custom methods -
@@ -32,7 +32,19 @@ class LoginVC: UIViewController {
     }
     
     func applyStyle() {
-        self.view.setGradientWith(hex1: "2F9C3A",hex2: "C8F4CC")
+        self.view.setGradientWith(hex1: "AFF9B7",hex2: "EEFAF0")
+        self.txtLoginEmail.superview?.layer.borderWidth = 2
+        self.txtLoginPassword.superview?.layer.borderWidth = 2
+        self.txtLoginEmail.superview?.layer.borderColor = UIColor.appGreen.cgColor
+        self.txtLoginPassword.superview?.layer.borderColor = UIColor.appGreen.cgColor
+        self.txtLoginEmail.superview?.layer.cornerRadius = 15
+        self.txtLoginPassword.superview?.layer.cornerRadius = 15
+        self.txtLoginEmail.textColor = UIColor.appGreen
+        self.txtLoginPassword.textColor = UIColor.appGreen
+        self.btnLogin.superview?.layer.cornerRadius = 15
+        self.btnLogin.layer.cornerRadius = 15
+        self.txtLoginPassword.isSecureTextEntry = true
+        self.btnEye.setBackgroundImage(UIImage(systemName: "eye.fill"), for: .normal)
     }
     
     //MARK: - Action methods -
@@ -42,7 +54,16 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func btnSignupTapped(_ sender: UIButton) {
-        // Firebase Signup here
+        let signupVC = STORYBOARD.instantiateViewController(identifier: "SignupVC") as! SignupVC
+        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
+    
+    @IBAction func btnEyeTapped(_ sender: UIButton) {
+        self.txtLoginPassword.isSecureTextEntry.toggle()
+        
+        let backImg = self.txtLoginPassword.isSecureTextEntry ? UIImage(systemName: "eye.fill") : UIImage(systemName: "eye.slash.fill")
+        
+        self.btnEye.setImage(backImg, for: .normal)
     }
 }
 

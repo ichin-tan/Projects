@@ -27,6 +27,7 @@
 		72CC1E482D14EC6F00DDB540 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E472D14EC6F00DDB540 /* Utility.swift */; };
 		72CC1E4B2D14ED6C00DDB540 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E4A2D14ED6C00DDB540 /* Extensions.swift */; };
 		72CC1E4D2D14F60D00DDB540 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC1E4C2D14F60D00DDB540 /* CircularProgressView.swift */; };
+		72E302A92D2356A60097E2B4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E302A82D2356A60097E2B4 /* Global.swift */; };
 		EB7A2B6C906DE6D340E8F6CC /* Pods_Tick_Tick_Done.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB14CEF9011B4F3E66ECCF /* Pods_Tick_Tick_Done.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		72CC1E4A2D14ED6C00DDB540 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		72CC1E4C2D14F60D00DDB540 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		72DA6C88D30B371ABC608895 /* Pods-Tick Tick Done.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick Tick Done.debug.xcconfig"; path = "Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done.debug.xcconfig"; sourceTree = "<group>"; };
+		72E302A82D2356A60097E2B4 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		99D0F557BB80817D797D25BB /* Pods-Tick Tick Done.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tick Tick Done.release.xcconfig"; path = "Target Support Files/Pods-Tick Tick Done/Pods-Tick Tick Done.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +179,7 @@
 				72CC1E4C2D14F60D00DDB540 /* CircularProgressView.swift */,
 				721AA1042D1B0E0800D26778 /* Constant.swift */,
 				721AA1062D1B117000D26778 /* UserDefaults.swift */,
+				72E302A82D2356A60097E2B4 /* Global.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				72CC1E432D14EA8400DDB540 /* LoginVC.swift in Sources */,
 				721AA1092D1D149F00D26778 /* HistoryVC.swift in Sources */,
 				721AA1032D1B0AD800D26778 /* SettingsVC.swift in Sources */,
+				72E302A92D2356A60097E2B4 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

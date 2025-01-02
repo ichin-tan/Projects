@@ -39,7 +39,7 @@ class LaunchVC: UIViewController {
     }
     
     func applyStyle() {
-        self.view.setGradientWith(hex1: "AFF9B7",hex2: "EEFAF0")
+        Global.setMainBackground(for: self.view)
         self.lblTick.font = UIFont.boldSystemFont(ofSize: 30)
     }
     

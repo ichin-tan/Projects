@@ -29,10 +29,12 @@ class LoginVC: UIViewController {
     
     func setUp() {
         self.title = "Login"
+        self.txtLoginPassword.delegate = self
+        self.txtLoginEmail.delegate = self
     }
     
     func applyStyle() {
-        self.view.setGradientWith(hex1: "AFF9B7",hex2: "EEFAF0")
+        Global.setMainBackground(for: self.view)
         self.txtLoginEmail.superview?.layer.borderWidth = 2
         self.txtLoginPassword.superview?.layer.borderWidth = 2
         self.txtLoginEmail.superview?.layer.borderColor = UIColor.appGreen.cgColor
@@ -45,6 +47,7 @@ class LoginVC: UIViewController {
         self.btnLogin.layer.cornerRadius = 15
         self.txtLoginPassword.isSecureTextEntry = true
         self.btnEye.setBackgroundImage(UIImage(systemName: "eye.fill"), for: .normal)
+        self.txtLoginEmail.keyboardType = .emailAddress
     }
     
     //MARK: - Action methods -
@@ -67,3 +70,17 @@ class LoginVC: UIViewController {
     }
 }
 
+//MARK: - UITextfield delegate -
+
+extension LoginVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if(textField == self.txtLoginEmail) {
+            self.txtLoginPassword.becomeFirstResponder()
+        } else {
+            self.txtLoginPassword.resignFirstResponder()
+        }
+        return true
+    }
+    
+}

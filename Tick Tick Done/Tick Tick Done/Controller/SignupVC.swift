@@ -28,14 +28,15 @@ class SignupVC: UIViewController {
     //MARK: - Custom methods -
     
     func setUp() {
-        
+        self.txtSignupEmail.delegate = self
+        self.txtSignupPassword.delegate = self
     }
     
     func applyStyle() {
         self.title = "Signup"
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.addBackButton()
-        self.view.setGradientWith(hex1: "AFF9B7",hex2: "EEFAF0")
+        Global.setMainBackground(for: self.view)
         self.txtSignupEmail.superview?.layer.borderWidth = 2
         self.txtSignupPassword.superview?.layer.borderWidth = 2
         self.txtSignupEmail.superview?.layer.borderColor = UIColor.appGreen.cgColor
@@ -48,6 +49,7 @@ class SignupVC: UIViewController {
         self.btnSignup.layer.cornerRadius = 15
         self.txtSignupPassword.isSecureTextEntry = true
         self.btnEye.setBackgroundImage(UIImage(systemName: "eye.fill"), for: .normal)
+        self.txtSignupEmail.keyboardType = .emailAddress
     }
     
     func addBackButton() {
@@ -75,4 +77,19 @@ class SignupVC: UIViewController {
     @objc func btnBackTapped() {
         self.navigationController?.popViewController(animated: true)
     }
+}
+
+//MARK: - UITextfield delegate -
+
+extension SignupVC: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if(textField == self.txtSignupEmail) {
+            self.txtSignupPassword.becomeFirstResponder()
+        } else {
+            self.txtSignupPassword.resignFirstResponder()
+        }
+        return true
+    }
+    
 }

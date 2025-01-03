@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20sp">
+
+    <ImageView
+        android:id="@+id/imgProperty"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/home3"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgProperty"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tvRent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRent"
+        android:layout_marginTop="5sp"/>
+
+    <TextView
+        android:id="@+id/tvBedRoomCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <Switch
+        android:id="@+id/switchAvailable"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:layout_marginTop="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvBedRoomCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvRent"
+        android:layout_marginRight="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgProperty"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="@+id/imgProperty"
+        android:text="UPDATE"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgProperty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        android:text="DELETE"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,7 +39,7 @@ class LaunchVC: UIViewController {
     }
     
     func applyStyle() {
-        self.view.setGradientWith(hex1: "2F9C3A",hex2: "C8F4CC")
+        Global.setMainBackground(for: self.view)
         self.lblTick.font = UIFont.boldSystemFont(ofSize: 30)
     }
     
@@ -49,7 +49,7 @@ class LaunchVC: UIViewController {
         }
         self.isProgressStarted = true
         self.tickCount += 1
-        self.lblTick.text = self.tickCount > 2 ? "DONE" : "TICK"
+        self.lblTick.text = self.tickCount > 2 ? Global.AppMessages.done : Global.AppMessages.tick
         self.lblTick.textColor = Utility.shared.getColorFrom(hexString: "08841E").withAlphaComponent(self.colorAlpha)
         self.colorAlpha += 0.25
         if(self.tickCount > 2) {

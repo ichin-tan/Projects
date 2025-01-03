@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="#09266A"
+ >
+
+    <TextView
+        android:id="@+id/tvAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Book"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/etBookTitle"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="Enter Book Title"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tvAddBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/white"
+        android:paddingLeft="10sp"
+        />
+
+    <EditText
+        android:id="@+id/etBookAuthor"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="Enter Book Author"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etBookTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/white"
+        android:paddingLeft="10sp"
+        />
+
+    <EditText
+        android:id="@+id/etBookPrice"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="Enter Book Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etBookAuthor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/white"
+        android:paddingLeft="10sp"
+        />
+
+    <EditText
+        android:id="@+id/etBookQuantity"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:hint="Enter Book Quantity"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/etBookPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/white"
+        android:paddingLeft="10sp"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Book"
+        app:layout_constraintTop_toBottomOf="@id/etBookQuantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30sp"
+        android:backgroundTint="#03A9F4"/>
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All Books"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="#03A9F4"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

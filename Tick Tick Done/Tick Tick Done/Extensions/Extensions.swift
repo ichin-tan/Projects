@@ -29,6 +29,42 @@ extension UIView {
         gradientLayer.colors = [color1.cgColor, color2.cgColor]
         gradientLayer.locations = locations
         self.layer.insertSublayer(gradientLayer, at: 0)
+    }
+}
 
+//MARK: - UIViewController Extension -
+
+extension UIViewController {
+    func showAlertWithTwoAction(title: String = "", message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: UIAlertController.Style.alert)
+
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.dismiss(animated: true)
+        }
+            
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { _ in
+            self.dismiss(animated: true)
+        }
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlert(title: String = "", message: String, completion: (() -> ())? = nil) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: UIAlertController.Style.alert)
+
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.dismiss(animated: true) {
+                if let completion = completion {
+                    completion()
+                }
+            }
+        }
+                    
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }

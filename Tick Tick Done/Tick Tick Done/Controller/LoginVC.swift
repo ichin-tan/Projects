@@ -7,6 +7,9 @@
 
 import Foundation
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class LoginVC: UIViewController {
     
@@ -28,7 +31,7 @@ class LoginVC: UIViewController {
     //MARK: - Custom methods -
     
     func setUp() {
-        self.title = "Login"
+        self.title = Global.AppMessages.login
         self.txtLoginPassword.delegate = self
         self.txtLoginEmail.delegate = self
     }
@@ -50,10 +53,45 @@ class LoginVC: UIViewController {
         self.txtLoginEmail.keyboardType = .emailAddress
     }
     
+    func login() {
+        if isValidated() {
+            let strEmail = self.txtLoginEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            let strPassword = self.txtLoginPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            Auth.auth().signIn(withEmail: strEmail, password: strPassword) { authResult, error in
+                if (authResult == nil) {
+                    if (error?.localizedDescription == Global.FirebaseErrors.invalidCred) {
+                        self.showAlert(message: Global.AppMessages.invalidCred)
+                    } else {
+                        self.showAlert(message: Global.AppMessages.somethingWentWrong)
+                    }
+                } else {
+                    isUserLoggedIn = true
+                    SCENE_DELEGATE.setTabbar()
+                }
+            }
+        }
+    }
+    
+    func isValidated() -> Bool {
+        let strEmail = self.txtLoginEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let strPassword = self.txtLoginPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        if (strEmail.isEmpty) {
+            self.showAlert(message: Global.AppMessages.enterEmail)
+            return false
+        } else if !(Global.isValidEmail(strEmail)) {
+            self.showAlert(message: Global.AppMessages.enterValidEmail)
+            return false
+        } else if (strPassword.isEmpty) {
+            self.showAlert(message: Global.AppMessages.enterPassword)
+            return false
+        }
+        return true
+    }
+    
     //MARK: - Action methods -
     
     @IBAction func btnLoginTapped(_ sender: UIButton) {
-        // Firebase Login here
+        self.login()
     }
     
     @IBAction func btnSignupTapped(_ sender: UIButton) {

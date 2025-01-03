@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
 
 class SignupVC: UIViewController {
     
@@ -33,7 +34,7 @@ class SignupVC: UIViewController {
     }
     
     func applyStyle() {
-        self.title = "Signup"
+        self.title = Global.AppMessages.signup
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.addBackButton()
         Global.setMainBackground(for: self.view)
@@ -60,10 +61,45 @@ class SignupVC: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
     }
     
+    func isValidated() -> Bool {
+        let strEmail = self.txtSignupEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let strPassword = self.txtSignupPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        if (strEmail.isEmpty) {
+            self.showAlert(message: Global.AppMessages.enterEmail)
+            return false
+        } else if !(Global.isValidEmail(strEmail)) {
+            self.showAlert(message: Global.AppMessages.enterValidEmail)
+            return false
+        } else if (strPassword.isEmpty) {
+            self.showAlert(message: Global.AppMessages.enterPassword)
+            return false
+        }
+        return true
+    }
+    
+    func signup() {
+        if(self.isValidated()) {
+            let strEmail = self.txtSignupEmail.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            let strPassword = self.txtSignupPassword.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            
+            Auth.auth().createUser(withEmail: strEmail, password: strPassword) { authResult, error in
+                
+                if(authResult == nil) {
+                    self.showAlert(message: Global.AppMessages.somethingWentWrong)
+                } else {
+                    self.showAlert(message: Global.AppMessages.userCreated) {
+                        isUserLoggedIn = true
+                        SCENE_DELEGATE.setTabbar()
+                    }
+                }
+            }
+        }
+    }
+    
     //MARK: - Action methods -
         
     @IBAction func btnSignupTapped(_ sender: UIButton) {
-        
+        self.signup()
     }
     
     @IBAction func btnEyeTapped(_ sender: UIButton) {

@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -17,9 +19,18 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
+        // load local.properties file
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+        // Set API keys in BuildConfig
+        resValue("string", "maps_api_key", properties.getProperty("MAPS_API_KEY"))
+//        buildConfigField("String", "MAPS_API_KEY", "\"${properties.getProperty(" MAPS_API_KEY ")}\"")
     }
 
     buildTypes {
+        android.buildFeatures.buildConfig = true
         release {
             isMinifyEnabled = false
             proguardFiles(

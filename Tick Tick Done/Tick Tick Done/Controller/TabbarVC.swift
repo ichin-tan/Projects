@@ -11,7 +11,15 @@ import UIKit
 public class TabBarVC: UITabBarController {
     override public func viewDidLoad() {
         super.viewDidLoad()
-        setupViewControllers()
+        self.applyStyle()
+        self.setupViewControllers()
+    }
+    
+    func applyStyle() {
+        self.tabBar.tintColor = .systemYellow
+        self.tabBar.backgroundColor = UIColor.appGreen
+        self.tabBar.unselectedItemTintColor = .white
+        self.tabBar.layer.cornerRadius = 25
     }
 
     func setupViewControllers() {

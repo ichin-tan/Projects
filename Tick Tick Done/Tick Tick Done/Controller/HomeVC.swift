@@ -18,15 +18,19 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View loaded home")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        print("View appeared home")
+        self.applyStyle()
+        self.setUp()
     }
 
     //MARK: - Custom methods -
+    
+    func setUp() {
+        
+    }
+    
+    func applyStyle() {
+        Global.setMainBackground(for: self.view)
+    }
     
     //MARK: - Action methods -
 }

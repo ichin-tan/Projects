@@ -18,15 +18,19 @@ class SettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View loaded settings")
+        self.applyStyle()
+        self.setUp()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        print("View appeared settings")
-    }
-    
+
     //MARK: - Custom methods -
+    
+    func setUp() {
+        
+    }
+    
+    func applyStyle() {
+        Global.setMainBackground(for: self.view)
+    }
     
     //MARK: - Action methods -
 }

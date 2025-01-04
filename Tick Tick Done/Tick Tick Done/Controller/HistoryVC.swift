@@ -27,7 +27,7 @@ class HistoryVC: UIViewController {
     }
     
     func applyStyle() {
-        
+        Global.setMainBackground(for: self.view)
     }
     
     //MARK: - Action methods -
